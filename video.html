@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="styleVideo.css">
+    <link rel="stylesheet" href="https://use.typekit.net/uvj0ctw.css">
+    <title></title>
+  </head>
+  <body>
+
+    <div class="container">
+          <div class="videoContainer">
+              <video id="episode1" muted>
+                <source src="Ep1V2_Jen.mp4" type="video/mp4">
+              </video>
+
+                <audio src="Episode1_MomAudio.mp3" id="rightAudio" crossorigin="anonymous"></audio>
+                <audio src="Episode1_JenniferAudio.mp3" id="leftAudio" crossorigin="anonymous"></audio>
+
+                <div id="left-container">
+                  <!-- <a href="index.html" id="back">Back</a> -->
+                  <button id="back"><img src="pngs/back.png"></button>
+                  <img src="pngs/jennifer-feelings.png" id="jen-text">
+                </div>
+                <div id="right-container">
+                  <img src="pngs/mom-feelings.png" id="mom-text">
+                </div>
+
+                <div class="video-controls hidden" id="video-controls">
+                    <div class="video-progress">
+                      <progress id="progress-bar" value="0" min="0"></progress>
+                      <input class="seek" id="seek" value="0" min="0" type="range" step="1">
+                      <div class="seek-tooltip" id="seek-tooltip">00:00</div>
+                    </div>
+                  <div class="bottom-controls">
+                    <button data-title="Play" data-playing="false" class="playButton" role="switch" aria-checked="false">
+                      <svg class="playback-icons">
+                        <use href="#play-icon"></use>
+                        <use class="hidden" href="#pause"></use>
+                      </svg>
+                    </button>
+
+                    <div class="time">
+                      <time id="time-elapsed">00:00</time>
+                      <span> / </span>
+                      <time id="duration">00:00</time>
+                    </div>
+                  </div>
+                </div>
+        </div>
+  </div>
+
+    <svg style="display: none">
+        <defs>
+          <symbol id="pause" viewBox="0 0 24 24">
+            <path d="M14.016 5.016h3.984v13.969h-3.984v-13.969zM6 18.984v-13.969h3.984v13.969h-3.984z"></path>
+          </symbol>
+
+          <symbol id="play-icon" viewBox="0 0 24 24">
+            <path d="M8.016 5.016l10.969 6.984-10.969 6.984v-13.969z"></path>
+          </symbol>
+        </defs>
+    </svg>
+
+    <script type="text/javascript" src = "scriptVideo.js">
+
+    </script>
+  </body>
+</html>

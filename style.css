@@ -1,0 +1,119 @@
+html {
+  box-sizing: border-box;
+  font-family: gimlet-display,serif;
+  font-weight: 300;
+  font-style: normal;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    background-image: linear-gradient(to right, #BBC0E8, #E5A79E);
+    margin: 0;
+    color: white;
+}
+
+.left-container{
+  position: absolute;
+  width: 50%;
+  height:100%;
+  left:0;
+  transition: all 0.2s ease;
+}
+
+.right-container{
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  transition: all 0.2s ease;
+}
+
+.jen-slider, .mom-slider{
+  display: none;
+}
+
+/* .fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+@keyframes fade {
+  from {opacity: 0.5}
+  to {opacity: 1}
+} */
+
+#jen-frame, #jen-frame2, #jen-frame3 {
+  position: absolute;
+  height: 100%;
+  z-index: 1;
+}
+
+#mom-frame, #mom-frame2, #mom-frame3 {
+  position: absolute;
+  float: right;
+  right:0;
+  height: 100%;
+}
+
+#jen-title{
+  position: absolute;
+  width: 50%;
+  top: 50%;
+  left: 10%;
+  z-index: 2;
+}
+
+#mom-title{
+  position: absolute;
+  float: right;
+  right: 10%;
+  width: 50%;
+  top: 50%;
+  z-index: 2;
+}
+
+.title {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 55%;
+  top: 7%;
+  left: 10%;
+}
+
+#main-title{
+  width: 50%;
+  height: fit-content;
+  padding-right: 50px;
+}
+
+#subtitle {
+  position: relative;
+  font-size: 20px;
+  top: 60%;
+  width: 25%;
+  padding-top: 15%;
+  /* left: 50%; */
+}
+
+.links {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  float: right;
+  right: 0;
+  top: 65%;
+  right: 30%;
+  line-height: 2.5;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+}
+
+a:hover {
+  color: #8890DC;
+}

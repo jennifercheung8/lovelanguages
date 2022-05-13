@@ -1,0 +1,70 @@
+body {
+  background-color: #0D1126;
+  color: white;
+  font-family: gimlet-display,serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 45%;
+  height: 100%;
+  padding-left: 10%;
+  /* margin-top: 2%; */
+}
+
+#signature {
+  position: relative;
+  margin-top: 30px;
+}
+
+.right-container{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  padding-right: 10%;
+  right: 0;
+  /* padding-top: 8%; */
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  float: right;
+  text-align: right;
+  margin-top: 50px;
+  line-height: 2;
+}
+
+a{
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #8890DC;
+}
+
+#about {
+  width: 400px;
+}
+
+p {
+    line-height: 1.5;
+}
+
+#back {
+  position: absolute;
+  top: 4%;
+  left: 4%;
+  width: 18px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
