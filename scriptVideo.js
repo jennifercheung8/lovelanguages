@@ -178,8 +178,8 @@ function hideControls() {
 // showControls displays the video controls
 function showControls() {
   videoControls.classList.remove('hide');
-	leftContainer.style.opacity = .8;
-	rightContainer.style.opacity = .8;
+	leftContainer.style.opacity = 1;
+	rightContainer.style.opacity = 1;
 }
 
 videoControls.addEventListener('mouseenter', showControls);
