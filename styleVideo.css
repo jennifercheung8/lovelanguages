@@ -81,10 +81,11 @@ body {
 }
 
 #back {
-  position: relative;
-  top: -42%;
+  position: absolute;
+  top: -12%;
   left: 6%;
   height: 40%;
+  padding-right: 10%;
 }
 
 img {

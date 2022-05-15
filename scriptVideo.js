@@ -185,6 +185,9 @@ function showControls() {
 videoControls.addEventListener('mouseenter', showControls);
 videoControls.addEventListener('mouseleave', hideControls);
 
+back.addEventListener('mouseenter', showControls);
+back.addEventListener('mouseleave', hideControls);
+
 //Coordinates
 
 let width = window.innerWidth-50;
